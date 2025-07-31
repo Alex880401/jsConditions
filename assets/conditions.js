@@ -1,6 +1,6 @@
 // 1.1)
 
-const isDay = true;
+/*const isDay = true;
 
 if (isDay) {
     document.writeln ('<p style="color: #0d2b04ff;background-color: #aeececff">"Світла тема"</p>');
@@ -14,18 +14,25 @@ const isOnline = false;
 
 if (!isOnline) {
     alert ("Ваше повідомлення буде відправлено при під'єднанні до мережі Інтернет");
-}
+}*/
 
 // 1.3)
 
 const sum = Number(prompt('Введіть суму Вашої покупки'));
+let calcSum = null;
+let discount = null;
 
 if (sum <= 500) {
-    alert ('Сума Вашої покупки ' + sum + ' грн.');
+    calcSum = Number(sum.toFixed(2));
+    alert ('Сума Вашої покупки ' + calcSum + ' грн.');
 } else if (sum > 500 && sum <=800) {
-    alert ('Вітаємо, Вам надано знижку 3%, сума Вашої покупки ' + sum * 0.97 + ' грн');
+    discount = sum * 0.97;
+    calcSum = Number(discount.toFixed(2));
+    alert ('Вітаємо, Вам надано знижку 3%, сума Вашої покупки ' + calcSum + ' грн');
 } else {
-    alert ('Вітаємо, Вам надано знижку 5%, сума Вашої покупки ' + sum * 0.95 + ' грн');
+    discount = sum * 0.95;
+    calcSum = Number(discount.toFixed(2));
+    alert ('Вітаємо, Вам надано знижку 5%, сума Вашої покупки ' + calcSum + ' грн');
 }
 
 // 2.1)
