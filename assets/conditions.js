@@ -1,6 +1,6 @@
 // 1.1)
 
-/*const isDay = true;
+const isDay = true;
 
 if (isDay) {
     document.writeln ('<p style="color: #0d2b04ff;background-color: #aeececff">"Світла тема"</p>');
@@ -14,7 +14,7 @@ const isOnline = false;
 
 if (!isOnline) {
     alert ("Ваше повідомлення буде відправлено при під'єднанні до мережі Інтернет");
-}*/
+}
 
 // 1.3)
 
